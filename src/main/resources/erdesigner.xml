@@ -119,13 +119,29 @@
         <Entry id="HAND">
             <Icon>/de/erdesignerng/icons/hand.gif</Icon>
         </Entry>
+        <Entry id="HAND2">
+             <Text lang="en">Hand</Text>
+            <Icon>/de/erdesignerng/icons/hand.gif</Icon>
+        </Entry>
         <Entry id="ENTITY">
+            <Icon>/de/erdesignerng/icons/entity.gif</Icon>
+        </Entry>
+         <Entry id="ENTITY2">
+            <Text lang="en">Entity</Text>
             <Icon>/de/erdesignerng/icons/entity.gif</Icon>
         </Entry>
         <Entry id="RELATION">
             <Icon>/de/erdesignerng/icons/relation1.gif</Icon>
         </Entry>
+        <Entry id="RELATION2">
+            <Text lang="en">Relation</Text>
+            <Icon>/de/erdesignerng/icons/relation1.gif</Icon>
+        </Entry>
         <Entry id="VIEWTOOL">
+            <Icon>/de/erdesignerng/icons/view.gif</Icon>
+        </Entry>
+        <Entry id="VIEWTOOL2">
+            <Text lang="en">View</Text>
             <Icon>/de/erdesignerng/icons/view.gif</Icon>
         </Entry>
         <Entry id="ZOOM">
@@ -542,6 +558,10 @@
         <Entry id="COMMENT">
             <Icon>/de/erdesignerng/icons/comment_add.gif</Icon>
         </Entry>
+        <Entry id="COMMENT2">
+            <Text lang="en">Comment</Text>
+            <Icon>/de/erdesignerng/icons/comment_add.gif</Icon>
+        </Entry>
         <Entry id="EXPORTINGTABLENEEDSPRIMARYKEY">
             <Text lang="de">Die exportierende Tabelle muss einen Primärschlüssel haben!</Text>
             <Text lang="en">The exporting table needs to have a primary key!</Text>
@@ -723,6 +743,10 @@
         <Entry id="HELP">
             <Text lang="de">Hilfe...</Text>
             <Text lang="en">Help...</Text>
+        </Entry>
+        <Entry id="HELP2">
+            <Text lang="de">Hilfe</Text>
+            <Text lang="en">Icon Information</Text>
         </Entry>
         <Entry id="ONLINEHELP">
             <Text lang="de">Onlinehilfe</Text>

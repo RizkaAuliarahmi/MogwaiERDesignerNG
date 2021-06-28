@@ -563,7 +563,15 @@ public class ApplicationPreferences {
 	 * @throws java.lang.Exception
 	 */
 	public URI getOnlineHelpPDFFile() throws Exception {
-		return new URL("http://mogwai.sourceforge.net/userdoc/MogwaiERDesignerNG.pdf").toURI();
+		return new URL("https://www.mirkosertic.de/media/MogwaiERDesignerNG.pdf#Adding Tables").toURI();
+	}
+
+	public URI getEntityRelationIs() throws Exception {
+		return new URL("https://www.geeksforgeeks.org/introduction-of-er-model/").toURI();
+	}
+
+	public URI getViewIs() throws Exception {
+		return new URL("https://www.geeksforgeeks.org/sql-views/").toURI();
 	}
 
 	public String getAutomaticRelationAttributePattern() {

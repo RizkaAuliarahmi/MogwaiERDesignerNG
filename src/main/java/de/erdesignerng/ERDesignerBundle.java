@@ -105,14 +105,26 @@ public interface ERDesignerBundle {
 	/** . */
 	String HAND = "HAND";
 
+	/** \u0048\u0061\u006e\u0064. */
+	String HAND2 = "HAND2";
+
 	/** . */
 	String ENTITY = "ENTITY";
+
+	/** \u0045\u006e\u0074\u0069\u0074\u0079. */
+	String ENTITY2 = "ENTITY2";
 
 	/** . */
 	String RELATION = "RELATION";
 
+	/** \u0052\u0065\u006c\u0061\u0074\u0069\u006f\u006e. */
+	String RELATION2 = "RELATION2";
+
 	/** . */
 	String VIEWTOOL = "VIEWTOOL";
+
+	/** \u0056\u0069\u0065\u0077. */
+	String VIEWTOOL2 = "VIEWTOOL2";
 
 	/** \u005a\u006f\u006f\u006d. */
 	String ZOOM = "ZOOM";
@@ -417,6 +429,9 @@ public interface ERDesignerBundle {
 	/** . */
 	String COMMENT = "COMMENT";
 
+	/** \u0043\u006f\u006d\u006d\u0065\u006e\u0074. */
+	String COMMENT2 = "COMMENT2";
+
 	/** \u0054\u0068\u0065\u0020\u0065\u0078\u0070\u006f\u0072\u0074\u0069\u006e\u0067\u0020\u0074\u0061\u0062\u006c\u0065\u0020\u006e\u0065\u0065\u0064\u0073\u0020\u0074\u006f\u0020\u0068\u0061\u0076\u0065\u0020\u0061\u0020\u0070\u0072\u0069\u006d\u0061\u0072\u0079\u0020\u006b\u0065\u0079\u0021. */
 	String EXPORTINGTABLENEEDSPRIMARYKEY = "EXPORTINGTABLENEEDSPRIMARYKEY";
 
@@ -554,6 +569,9 @@ public interface ERDesignerBundle {
 
 	/** \u0048\u0065\u006c\u0070\u002e\u002e\u002e. */
 	String HELP = "HELP";
+
+	/** \u0049\u0063\u006f\u006e\u0020\u0049\u006e\u0066\u006f\u0072\u006d\u0061\u0074\u0069\u006f\u006e. */
+	String HELP2 = "HELP2";
 
 	/** \u004f\u006e\u006c\u0069\u006e\u0065\u0020\u0068\u0065\u006c\u0070. */
 	String ONLINEHELP = "ONLINEHELP";
