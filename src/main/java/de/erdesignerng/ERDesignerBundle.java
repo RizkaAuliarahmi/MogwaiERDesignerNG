@@ -105,7 +105,7 @@ public interface ERDesignerBundle {
 	/** . */
 	String HAND = "HAND";
 
-	/** \u0048\u0061\u006e\u0064. */
+	/** \u0053\u0065\u006c\u0065\u0063\u0074. */
 	String HAND2 = "HAND2";
 
 	/** . */

@@ -444,6 +444,36 @@ public final class ERDesignerComponent implements ResourceHelperProvider {
         DefaultAction theDomainsAction = new DefaultAction(
                 new EditDomainCommand(), this,
                 ERDesignerBundle.DOMAINEDITOR);
+        
+        DefaultAction theSaveInfoAction = new DefaultAction(
+                new saveInfoCommand(), this, ERDesignerBundle.SAVEMODEL);
+
+        DefaultAction theNewInfoAction = new DefaultAction(
+                new newInfoCommand(), this, ERDesignerBundle.NEWMODEL);
+
+        DefaultAction theLoadInfoAction = new DefaultAction(
+                new loadInfoCommand(), this, ERDesignerBundle.LOADMODEL);
+        
+        DefaultAction theZoomInInfoAction = new DefaultAction(
+                new zoomInInfoCommand(), this, ERDesignerBundle.ZOOMIN);
+        
+        DefaultAction theZoomOutInfoAction = new DefaultAction(
+                new zoomOutInfoCommand(), this, ERDesignerBundle.ZOOMOUT);
+        
+        DefaultAction theSelectInfoAction = new DefaultAction(
+                new selectInfoCommand(), this, ERDesignerBundle.HAND2);
+        
+        DefaultAction theCommentInfoAction = new DefaultAction(
+                new commentInfoCommand(), this, ERDesignerBundle.COMMENT2);
+
+        DefaultAction iconEntity = new DefaultAction(
+            aEvent -> commandShowEntityRelation(), this, ERDesignerBundle.ENTITY2);
+
+        DefaultAction iconRelation = new DefaultAction(
+            aEvent -> commandShowEntityRelation(), this, ERDesignerBundle.RELATION2);
+                
+        DefaultAction iconView = new DefaultAction(
+            aEvent -> commandShowView(), this, ERDesignerBundle.VIEWTOOL2);
 
         DefaultAction theZoomAction = new DefaultAction(
                 aEvent -> editor.commandSetZoom((ZoomInfo) ((JComboBox) aEvent
@@ -485,36 +515,6 @@ public final class ERDesignerComponent implements ResourceHelperProvider {
 
         DefaultAction theHelpAction = new DefaultAction(
                 aEvent -> commandShowHelp(), this, ERDesignerBundle.HELP);
-
-        DefaultAction iconNew = new DefaultAction(
-            aEvent -> commandShowHelp(), this, ERDesignerBundle.NEW);
-
-        DefaultAction iconLoad = new DefaultAction(
-            aEvent -> commandShowHelp(), this, ERDesignerBundle.LOADMODEL);
-
-        DefaultAction iconSave = new DefaultAction(
-            aEvent -> commandShowHelp(), this, ERDesignerBundle.SAVEMODEL);
-        
-        DefaultAction iconZoomIn = new DefaultAction(
-            aEvent -> commandShowHelp(), this, ERDesignerBundle.ZOOMIN);
-        
-        DefaultAction iconZoomOut = new DefaultAction(
-            aEvent -> commandShowHelp(), this, ERDesignerBundle.ZOOMOUT);
-
-        DefaultAction iconHands = new DefaultAction(
-            aEvent -> commandShowHelp(), this, ERDesignerBundle.HAND2);
-        
-        DefaultAction iconEntity = new DefaultAction(
-            aEvent -> commandShowEntityRelation(), this, ERDesignerBundle.ENTITY2);
-
-        DefaultAction iconRelation = new DefaultAction(
-            aEvent -> commandShowEntityRelation(), this, ERDesignerBundle.RELATION2);
-        
-        DefaultAction iconComment = new DefaultAction(
-            aEvent -> commandShowHelp(), this, ERDesignerBundle.COMMENT2);
-        
-        DefaultAction iconView = new DefaultAction(
-            aEvent -> commandShowView(), this, ERDesignerBundle.VIEWTOOL2);
 
         exportOpenXavaAction = new DefaultAction(
                 new OpenXavaExportExportCommand(), this,
@@ -631,15 +631,15 @@ public final class ERDesignerComponent implements ResourceHelperProvider {
         ERDesignerToolbarEntry theHelp2Menu = new ERDesignerToolbarEntry(
             ERDesignerBundle.HELP2);
 
-        theHelp2Menu.add(new DefaultMenuItem(iconNew));
-        theHelp2Menu.add(new DefaultMenuItem(iconLoad));
-        theHelp2Menu.add(new DefaultMenuItem(iconSave));
-        theHelp2Menu.add(new DefaultMenuItem(iconZoomIn));
-        theHelp2Menu.add(new DefaultMenuItem(iconZoomOut));
-        theHelp2Menu.add(new DefaultMenuItem(iconHands));
+        theHelp2Menu.add(new DefaultMenuItem(theNewInfoAction));
+        theHelp2Menu.add(new DefaultMenuItem(theLoadInfoAction));
+        theHelp2Menu.add(new DefaultMenuItem(theSaveInfoAction));
+        theHelp2Menu.add(new DefaultMenuItem(theZoomInInfoAction));
+        theHelp2Menu.add(new DefaultMenuItem(theZoomOutInfoAction));
+        theHelp2Menu.add(new DefaultMenuItem(theSelectInfoAction));
         theHelp2Menu.add(new DefaultMenuItem(iconEntity));
         theHelp2Menu.add(new DefaultMenuItem(iconRelation));
-        theHelp2Menu.add(new DefaultMenuItem(iconComment));
+        theHelp2Menu.add(new DefaultMenuItem(theCommentInfoAction));
         theHelp2Menu.add(new DefaultMenuItem(iconView));
 
         ERDesignerToolbarEntry theViewMenu = new ERDesignerToolbarEntry(

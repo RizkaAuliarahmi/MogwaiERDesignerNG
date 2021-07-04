@@ -120,7 +120,7 @@
             <Icon>/de/erdesignerng/icons/hand.gif</Icon>
         </Entry>
         <Entry id="HAND2">
-             <Text lang="en">Hand</Text>
+             <Text lang="en">Select</Text>
             <Icon>/de/erdesignerng/icons/hand.gif</Icon>
         </Entry>
         <Entry id="ENTITY">
